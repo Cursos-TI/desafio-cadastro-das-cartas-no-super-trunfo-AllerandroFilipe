@@ -10,6 +10,8 @@ int main(){
     float area1, area2;
     float pib1, pib2;
     int ponto1, ponto2;
+    float Densidade1, Densidade2;
+    float PerCapita1, PerCapita2;
 
     // Solicita ao usuário uma letra de A a H para representar o estado
     printf("Digite uma letra de A a H para representar o estado: ");
@@ -38,6 +40,12 @@ int main(){
     // Solicita ao usuário a quantidade de pontos turísticos na cidade
     printf("Digite a quantidade de pontos turísticos na cidade:");
     scanf("%d", &ponto1);
+
+    // Calcula a Densidade Populacional
+    Densidade1 = populacao1 / area1;
+
+    // Calcula a Densidade Populacional
+    PerCapita1 = (pib1 * 1e9) / populacao1;
 
     printf("\n");
 
@@ -68,6 +76,12 @@ int main(){
     // Solicita ao usuário a quantidade de pontos turísticos na cidade
     printf("Digite a quantidade de pontos turísticos na segunda cidade:");
     scanf("%d", &ponto2);
+
+    // Calcula a Densidade Populacional
+    Densidade2 = populacao2 / area2;
+
+    // Calcula a Densidade Populacional
+    PerCapita2 = (pib2 * 1e9) / populacao2;
     
     // Imprime uma quebra de linha para organizar a saída no console
     printf("\n");
@@ -96,6 +110,12 @@ int main(){
     // Exibe o número de pontos turísticos na cidade
     printf("Número de Pontos Turíticos: %d\n", ponto1);
 
+    // Exibe a Densidade Populacional
+    printf("Densidade Populacional: %.2f\n", Densidade1);
+
+    // Exibe o PIB per Capita
+    printf("PIB per Capita %.2f\n", PerCapita1);
+
     // Imprime uma quebra de linha para organizar a saída no console
     printf("\n");
 
@@ -122,6 +142,12 @@ int main(){
 
     // Exibe o número de pontos turísticos na cidade
     printf("Número de Pontos Turíticos: %d\n", ponto2);
+
+    // Exibe a Densidade Populacional
+    printf("Densidade Populacional: %.2f\n", Densidade2);
+
+    // Exibe o PIB per Capita
+    printf("PIB per Capita %.2f\n", PerCapita2);
 
     return 0;
 
